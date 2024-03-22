@@ -4,7 +4,7 @@ const Disscussion = () => {
   return (
     <div>
       <div
-        className={`bg-slate-600 min-h-screen`}
+        className={`bg-base-100 min-h-screen`}
       >
         Middle
         {/* <button

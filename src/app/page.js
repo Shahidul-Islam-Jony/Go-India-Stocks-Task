@@ -3,6 +3,7 @@ import Disscussion from "@/Components/Disscussion/Disscussion";
 import Market from "@/Components/Market/Market";
 import SideNav from "@/Components/SideNav/SideNav";
 import { useState } from "react";
+import { FaCaretLeft, FaCaretRight } from "react-icons/fa6";
 
 const Home = () => {
   const [isSideOpen, setIsSideOpen] = useState(false);
@@ -21,10 +22,13 @@ const Home = () => {
 
   return (
     <div>
+      {/* small devices tab */}
       <div className="flex gap-4 md:hidden">
         <button onClick={() => handleDisscussionOpen()}>Disscussion</button>
         <button onClick={() => handleMarketOpen()}>Market</button>
       </div>
+
+      {/* Large devices layout */}
       <div className="hidden md:flex">
         {isSideOpen && (
           <div className="md:w-2/12">
@@ -37,19 +41,28 @@ const Home = () => {
           } md:w-7/12 relative min-h-screen`}
         >
           <Disscussion></Disscussion>
-          <button
-            onClick={() => setIsSideOpen(!isSideOpen)}
-            className="absolute top-1/2"
-          >
-            open
-          </button>
+          {isSideOpen ? (
+            <button
+              onClick={() => setIsSideOpen(!isSideOpen)}
+              className="absolute top-1/2 bg-blue-950 text-white py-8"
+            >
+              <FaCaretLeft />
+            </button>
+          ) : (
+            <button
+              onClick={() => setIsSideOpen(!isSideOpen)}
+              className="absolute top-1/2 bg-blue-950 text-white py-8"
+            >
+              <FaCaretRight />
+            </button>
+          )}
         </div>
         <div className={`${!isSideOpen && "md:w-4/12"} md:w-3/12`}>
           <Market></Market>
         </div>
       </div>
 
-      {/* small devices */}
+      {/* small devices Layout*/}
       <div className="">
         <div className="relative flex md:hidden">
           {isSideOpen && (
@@ -60,12 +73,25 @@ const Home = () => {
           {isDisscussionOpen && (
             <div className="z-10 w-full relative min-h-screen">
               <Disscussion></Disscussion>
-              <button
-                onClick={() => setIsSideOpen(!isSideOpen)}
-                className={`absolute top-1/2 ${isSideOpen&&'left-1/2'}`}
-              >
-                open
-              </button>
+              {isSideOpen ? (
+                <button
+                  onClick={() => setIsSideOpen(!isSideOpen)}
+                  className={`absolute top-1/2 ${
+                    isSideOpen && "left-1/2"
+                  } bg-blue-950 text-white py-8`}
+                >
+                  <FaCaretLeft />
+                </button>
+              ) : (
+                <button
+                  onClick={() => setIsSideOpen(!isSideOpen)}
+                  className={`absolute top-1/2 ${
+                    isSideOpen && "left-1/2"
+                  } bg-blue-950 text-white py-8`}
+                >
+                  <FaCaretRight />
+                </button>
+              )}
             </div>
           )}
           {isMarketOpen && (
