@@ -37,7 +37,7 @@ const Home = () => {
         )}
         <div
           className={`${
-            !isSideOpen && "md:w-7/12"
+            !isSideOpen && "md:w-8/12"
           } md:w-6/12 relative min-h-screen`}
         >
           <Disscussion></Disscussion>
@@ -57,7 +57,7 @@ const Home = () => {
             </button>
           )}
         </div>
-        <div className={`${!isSideOpen && "md:w-3/12"} md:w-3/12`}>
+        <div className={`${!isSideOpen && "md:w-4/12"} md:w-3/12`}>
           <Market></Market>
         </div>
       </div>
