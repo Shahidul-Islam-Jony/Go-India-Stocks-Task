@@ -31,14 +31,14 @@ const Home = () => {
       {/* Large devices layout */}
       <div className="hidden md:flex">
         {isSideOpen && (
-          <div className="md:w-2/12">
+          <div className="md:w-3/12">
             <SideNav></SideNav>
           </div>
         )}
         <div
           className={`${
-            !isSideOpen && "md:w-8/12"
-          } md:w-7/12 relative min-h-screen`}
+            !isSideOpen && "md:w-7/12"
+          } md:w-6/12 relative min-h-screen`}
         >
           <Disscussion></Disscussion>
           {isSideOpen ? (
@@ -57,7 +57,7 @@ const Home = () => {
             </button>
           )}
         </div>
-        <div className={`${!isSideOpen && "md:w-4/12"} md:w-3/12`}>
+        <div className={`${!isSideOpen && "md:w-3/12"} md:w-3/12`}>
           <Market></Market>
         </div>
       </div>
