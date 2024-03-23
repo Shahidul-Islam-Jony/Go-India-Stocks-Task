@@ -6,7 +6,7 @@ import { GoComment } from "react-icons/go";
 import { FiShare2 } from "react-icons/fi";
 
 const Disscussion = () => {
-  const data = [1, 2, 3, 4, 5, 6];
+  const data = [1, 2, 3, 4, 5, 6];    // array for data mapping to show Disscussion data
 
   return (
     <div>

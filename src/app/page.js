@@ -7,7 +7,7 @@ import { FaCaretLeft, FaCaretRight } from "react-icons/fa6";
 
 
 const Home = () => {
-  const [isSideOpen, setIsSideOpen] = useState(true);
+  const [isSideOpen, setIsSideOpen] = useState(true);     // checking for sidebar is open or not.
   const [isDisscussionOpen, setDesscussionOpen] = useState(true);
   const [isMarketOpen, setMarketOpen] = useState(false);
 
