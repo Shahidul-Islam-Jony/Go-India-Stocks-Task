@@ -2,7 +2,7 @@ import Image from "next/image";
 import sunsetImg from "../../assests/images/mountain.jpg";
 
 const Market = () => {
-  const data = [1, 2, 3, 4];
+  const data = [1, 2, 3, 4];  //array for data mapping to show market storage data
   return (
     <div>
       <div className="bg-base-100 pl-4 min-h-screen pt-2">
