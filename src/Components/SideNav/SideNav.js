@@ -13,7 +13,7 @@ const SideNav = () => {
         <div className="flex items-center gap-4 p-4 border-b-2">
           <IoPersonSharp className="text-xl" />
           <p className="font-bold">Hello,User</p>
-          <div className="flex md:ml-40 relative">
+          <div className="flex md:ml-5 relative">
             <IoNotifications className="text-2xl" />
             <GoDotFill className="absolute text-red-500 right-0" />
           </div>

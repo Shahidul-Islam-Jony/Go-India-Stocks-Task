@@ -5,6 +5,7 @@ import SideNav from "@/Components/SideNav/SideNav";
 import { useState } from "react";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa6";
 
+
 const Home = () => {
   const [isSideOpen, setIsSideOpen] = useState(false);
   const [isDisscussionOpen, setDesscussionOpen] = useState(true);
@@ -23,9 +24,9 @@ const Home = () => {
   return (
     <div>
       {/* small devices tab */}
-      <div className="flex gap-4 md:hidden">
-        <button onClick={() => handleDisscussionOpen()}>Disscussion</button>
-        <button onClick={() => handleMarketOpen()}>Market</button>
+      <div className="flex md:hidden">
+        <button className="bg-blue-900 hover:bg-blue-950 w-full hover:border-b-2 hover:border-b-red-500 text-white" onClick={() => handleDisscussionOpen()}>Disscussion Form</button>
+        <button className="bg-blue-900 hover:bg-blue-950 w-full hover:border-b-2 hover:border-b-red-500 text-white" onClick={() => handleMarketOpen()}>Market Stories</button>
       </div>
 
       {/* Large devices layout */}
