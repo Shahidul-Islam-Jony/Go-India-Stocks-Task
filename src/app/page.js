@@ -25,34 +25,34 @@ const Home = () => {
     <div>
       {/* small devices tab */}
       <div className="flex md:hidden">
-        <button className="bg-blue-900 hover:bg-blue-950 w-full hover:border-b-2 hover:border-b-red-500 text-white" onClick={() => handleDisscussionOpen()}>Disscussion Form</button>
+        <button className="bg-blue-900 hover:bg-blue-950 w-full hover:border-b-2 hover:border-b-red-500 text-white" onClick={() => handleDisscussionOpen()}>Disscussion Fourm</button>
         <button className="bg-blue-900 hover:bg-blue-950 w-full hover:border-b-2 hover:border-b-red-500 text-white" onClick={() => handleMarketOpen()}>Market Stories</button>
       </div>
 
       {/* Large devices layout */}
       <div className="hidden md:flex">
         {isSideOpen && (
-          <div className="md:w-3/12">
+          <div className="w-3/12">
             <SideNav></SideNav>
           </div>
         )}
         <div
           className={`${
-            !isSideOpen && "md:w-8/12"
-          } md:w-6/12 relative min-h-screen`}
+            !isSideOpen && "w-8/12"
+          } w-6/12 relative min-h-screen`}
         >
           <Disscussion></Disscussion>
           {isSideOpen ? (
             <button
               onClick={() => setIsSideOpen(!isSideOpen)}
-              className="absolute top-1/2 bg-blue-950 text-white py-8"
+              className="absolute top-1/4 bg-blue-950 text-white py-8"
             >
               <FaCaretLeft />
             </button>
           ) : (
             <button
               onClick={() => setIsSideOpen(!isSideOpen)}
-              className="absolute top-1/2 bg-blue-950 text-white py-8"
+              className="absolute top-1/4 bg-blue-950 text-white py-8"
             >
               <FaCaretRight />
             </button>
@@ -77,7 +77,7 @@ const Home = () => {
               {isSideOpen ? (
                 <button
                   onClick={() => setIsSideOpen(!isSideOpen)}
-                  className={`absolute top-1/2 ${
+                  className={`absolute top-44 ${
                     isSideOpen && "left-1/2"
                   } bg-blue-950 text-white py-8`}
                 >
@@ -86,7 +86,7 @@ const Home = () => {
               ) : (
                 <button
                   onClick={() => setIsSideOpen(!isSideOpen)}
-                  className={`absolute top-1/2 ${
+                  className={`absolute top-44 ${
                     isSideOpen && "left-1/2"
                   } bg-blue-950 text-white py-8`}
                 >

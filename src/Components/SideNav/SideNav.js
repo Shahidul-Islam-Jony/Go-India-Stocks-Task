@@ -19,8 +19,8 @@ const SideNav = () => {
           </div>
         </div>
         <div className="flex flex-col p-4">
-          <Link href="#" className="flex items-center gap-2 mb-4">
-            <MdChat className="md:text-xl" /> Disscussion Form
+          <Link href="#" className="flex items-center md:gap-2 mb-4">
+            <MdChat className="md:text-xl" /> Disscussion Fourm
             <FaCaretDown className="" />
           </Link>
           <Link href="#" className="flex items-center gap-2 mb-4">
