@@ -18,9 +18,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
-      <head>
-        <link href="./favicon.ico" rel="shortcut icon"/>
-      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
