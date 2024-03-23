@@ -7,7 +7,7 @@ import { FaCaretLeft, FaCaretRight } from "react-icons/fa6";
 
 
 const Home = () => {
-  const [isSideOpen, setIsSideOpen] = useState(false);
+  const [isSideOpen, setIsSideOpen] = useState(true);
   const [isDisscussionOpen, setDesscussionOpen] = useState(true);
   const [isMarketOpen, setMarketOpen] = useState(false);
 
@@ -25,7 +25,7 @@ const Home = () => {
     <div>
       {/* small devices tab */}
       <div className="flex md:hidden">
-        <button className="bg-blue-900 hover:bg-blue-950 w-full hover:border-b-2 hover:border-b-red-500 text-white" onClick={() => handleDisscussionOpen()}>Disscussion Fourm</button>
+        <button className="bg-blue-900  py-4 hover:bg-blue-950 w-full hover:border-b-2 hover:border-b-red-500 text-white" onClick={() => handleDisscussionOpen()}>Disscussion Fourm</button>
         <button className="bg-blue-900 hover:bg-blue-950 w-full hover:border-b-2 hover:border-b-red-500 text-white" onClick={() => handleMarketOpen()}>Market Stories</button>
       </div>
 
@@ -45,14 +45,14 @@ const Home = () => {
           {isSideOpen ? (
             <button
               onClick={() => setIsSideOpen(!isSideOpen)}
-              className="absolute top-1/4 bg-blue-950 text-white py-8"
+              className="absolute top-48 bg-blue-950 text-white py-8"
             >
               <FaCaretLeft />
             </button>
           ) : (
             <button
               onClick={() => setIsSideOpen(!isSideOpen)}
-              className="absolute top-1/4 bg-blue-950 text-white py-8"
+              className="absolute top-48 bg-blue-950 text-white py-8"
             >
               <FaCaretRight />
             </button>

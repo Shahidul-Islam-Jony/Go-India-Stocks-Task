@@ -11,7 +11,7 @@ const Disscussion = () => {
   return (
     <div>
       <div className="bg-base-100 pl-4 min-h-screen pt-2">
-        <h1 className="text-red-600 font-bold text-xl uppercase bg-gray-300 w-fit p-2 rounded-sm">
+        <h1 className="hidden md:block text-red-600 font-bold text-xl uppercase bg-gray-300 w-fit p-2 rounded-sm">
           Disscussion Fourm
         </h1>
 
