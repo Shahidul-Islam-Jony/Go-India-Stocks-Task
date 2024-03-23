@@ -11,10 +11,12 @@ const Home = () => {
   const [isDisscussionOpen, setDesscussionOpen] = useState(true);
   const [isMarketOpen, setMarketOpen] = useState(false);
 
+  // handle Discussion fourm tabs
   const handleDisscussionOpen = () => {
     setDesscussionOpen(true);
     setMarketOpen(false);
   };
+  // handle Market Stories tabs
   const handleMarketOpen = () => {
     setMarketOpen(true);
     setDesscussionOpen(false);
