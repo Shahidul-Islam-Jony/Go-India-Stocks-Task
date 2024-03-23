@@ -31,7 +31,7 @@ const Disscussion = () => {
                     <h3 className="text-lg font-medium">Lorem Ipsum</h3>
                     <div className="flex flex-1 justify-between">
                       <p className="bg-blue-600 h-fit px-2 text-white rounded-xl">
-                        Sector
+                        Sector 2
                       </p>
                       <p className="text-blue-500">2 min ago</p>
                     </div>
